@@ -2,6 +2,16 @@
 
 Node.js Express implementation with trunk-based development and event-driven deployments via essesseff platform.
 
+*Please Note:*
+
+*essesseff™ is an independent DevOps ALM PaaS-as-SaaS and is in no way affiliated with, endorsed by, sponsored by, or otherwise connected to GitHub® or The Linux Foundation®.* 
+
+*essesseff™ is a trademark of essesseff LLC.*
+
+*GITHUB®, the GITHUB® logo design and the INVERTOCAT logo design are trademarks of GitHub, Inc., registered in the United States and other countries.*
+
+*Argo®, Helm®, Kubernetes® and K8s® are registered trademarks of The Linux Foundation.*
+
 ## Architecture
 
 * **Branch Strategy**: Single `main` branch (trunk-based)
@@ -112,3 +122,8 @@ curl http://localhost:8080/
 
 * Node.js >= 18.0.0
 * npm or yarn
+
+## Disclaimer
+This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+
+Use at your own risk. The maintainers of this project make no guarantees about its functionality, security, or suitability for any purpose.
