@@ -1,6 +1,6 @@
 # hello-world Application (Node.js)
 
-Node.js Express implementation with trunk-based development and event-driven deployments via essesseff platform.
+Node.js Express implementation with trunk-based development and GitOps-driven deployments via Argo CD to Kubernetes (see related repositories), with optional process orchestration, reporting, etc. via the essesseff DevOps platform.
 
 *Please Note:*
 
@@ -31,9 +31,11 @@ git commit -am "Add feature"
 git push origin feature/my-feature
 
 # 4. After review, merge to main
-# This triggers automatic build and deploy to DEV
+# This triggers automatic build
 
-# 5. Use essesseff UI for promotions:
+# 5. *If an essesseff subscriber*, upon successful build completion, Helm config-dev Chart.yaml and values.yaml will be automatically updated with the newly built image tag, triggering Argo CD DEV (see argocd-dev repo) to trigger automated deployment to DEV Kubernetes.
+
+# 6. Use essesseff UI for promotions:
 #    - Developer declares Release Candidate
 #    - QA accepts RC → deploys to QA (or alternatively rejects the promotion of the RC to QA)
 #    - QA marks as Stable (or alternatively rejects the promotion to Stable)
@@ -91,10 +93,10 @@ docker run -p 8080:8080 hello-world-nodejs:local
 ## Related Repositories
 
 * Source: hello-world (this repo)
-* Config DEV: hello-world-config-dev
-* Config QA: hello-world-config-qa
-* Config STAGING: hello-world-config-staging
-* Config PROD: hello-world-config-prod
+* Helm Config DEV: hello-world-config-dev
+* Helm Config QA: hello-world-config-qa
+* Helm Config STAGING: hello-world-config-staging
+* Helm Config PROD: hello-world-config-prod
 * Argo CD Config DEV: hello-world-argocd-dev
 * Argo CD Config QA: hello-world-argocd-qa
 * Argo CD Config STAGING: hello-world-argocd-staging
