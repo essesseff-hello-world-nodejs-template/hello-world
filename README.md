@@ -125,6 +125,34 @@ curl http://localhost:8080/
 * Node.js >= 18.0.0
 * npm or yarn
 
+## Deployment
+
+The application is built automatically and ready to deploy to DEV environment after changes are merged to `main` branch and automatic code build succeeds. If an essesseff subscriber, essesseff updates the Helm config-dev Chart.yaml and values.yaml with the newly built image tag, triggering Argo CD DEV (see argocd-dev repo) to deploy the image and DEV config to Kubernetes DEV.  Promotion to QA, STAGING, and PROD environments is managed through the essesseff platform.
+
+### Container Image Tags
+
+Container images are tagged with the format:
+```
+{semver}-{git-hash}-{timestamp}
+```
+
+Example: `1.0.0-a1b2c3d-20231201T120000Z`
+
+## CI/CD
+
+GitHub Actions workflow (`.github/workflows/build.yml`) handles:
+* Building the Docker image
+* Pushing to GitHub Container Registry
+* Generating build metadata
+* Triggering essesseff deployment to DEV
+
+## Health Checks
+
+The application includes health check endpoints that can be used by:
+* Kubernetes liveness/readiness probes
+* Load balancers
+* Monitoring systems
+
 ## Disclaimer
 This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
 
