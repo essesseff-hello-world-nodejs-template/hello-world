@@ -14,7 +14,7 @@ Node.js Express implementation with trunk-based development and GitOps-driven de
 
 ## essesseff App GitHub Repository Structure 
 
-* Source: hello-world (this repo)
+* Source: [hello-world (this repo)](https://github.com/essesseff-hello-world-nodejs-template/hello-world)
 * Helm Config DEV: [hello-world-config-dev](https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-dev)
 * Helm Config QA: [hello-world-config-qa](https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-qa)
 * Helm Config STAGING: [hello-world-config-staging](https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-staging)
