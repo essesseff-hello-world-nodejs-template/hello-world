@@ -15,14 +15,14 @@ Node.js Express implementation with trunk-based development and GitOps-driven de
 ## essesseff App GitHub Repository Structure 
 
 * Source: hello-world (this repo)
-* Helm Config DEV: hello-world-config-dev
-* Helm Config QA: hello-world-config-qa
-* Helm Config STAGING: hello-world-config-staging
-* Helm Config PROD: hello-world-config-prod
-* Argo CD Config DEV: hello-world-argocd-dev
-* Argo CD Config QA: hello-world-argocd-qa
-* Argo CD Config STAGING: hello-world-argocd-staging
-* Argo CD Config PROD: hello-world-argocd-prod
+* Helm Config DEV: [hello-world-config-dev](https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-dev)
+* Helm Config QA: [hello-world-config-qa](https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-qa)
+* Helm Config STAGING: [hello-world-config-staging](https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-staging)
+* Helm Config PROD: [hello-world-config-prod](https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-prod)
+* Argo CD Config DEV: [hello-world-argocd-dev](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-dev)
+* Argo CD Config QA: [hello-world-argocd-qa](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-qa)
+* Argo CD Config STAGING: [hello-world-argocd-staging](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-dev)
+* Argo CD Config PROD: [hello-world-argocd-prod](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-dev)
 
 ## Develop, Build and Deploy 
 
