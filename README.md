@@ -1,6 +1,6 @@
 # hello-world Application (Node.js)
 
-Node.js Express implementation with trunk-based development and GitOps-driven deployments via Argo CD to Kubernetes (see related repositories), with *optional* process orchestration, reporting, etc. via the essesseff DevOps platform available on a per essesseff app subscription.
+Node.js Express implementation with trunk-based development and GitOps-driven deployments via Argo CD to Kubernetes (see related repositories), with *optional* process orchestration, reporting, etc. via the [essesseff DevOps platform](https://essesseff.com) available on a per essesseff app subscription.
 
 *Please Note:*
 
