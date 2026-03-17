@@ -23,8 +23,8 @@ Setup **GitHub → Argo CD → K8s** in *less than 5 minutes* with the [essessef
 * Helm Config PROD: [hello-world-config-prod](https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-prod)
 * Argo CD Config DEV: [hello-world-argocd-dev](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-dev)
 * Argo CD Config QA: [hello-world-argocd-qa](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-qa)
-* Argo CD Config STAGING: [hello-world-argocd-staging](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-dev)
-* Argo CD Config PROD: [hello-world-argocd-prod](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-dev)
+* Argo CD Config STAGING: [hello-world-argocd-staging](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-staging)
+* Argo CD Config PROD: [hello-world-argocd-prod](https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-prod)
 
 ### Why so many repos?
 
